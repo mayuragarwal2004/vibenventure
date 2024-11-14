@@ -64,6 +64,11 @@
                 transform: scale(1.1);
                 box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
             }
+            @media screen and (min-width: 500px) {
+                .ticket-button{
+                    display: none;
+                }
+            }
         </style>
         
 
@@ -72,12 +77,14 @@
                 <a class="navbar-brand d-flex align-items-center" href="index.html" style="text-decoration: none;">
                     <!-- Brand name -->
                     <img src="images/A1-01.png" alt="VIBE N VENTURE Logo" class="logo me-4" style="height: 40px;">
-                    <span style="font-weight: bold; font-size: 1.5rem;">VIBE N VENTURE</span>
-                    <!-- Tagline -->
-                    <small class="ms-2 text-muted" style="font-size: 1rem;">Event Planner</small>
+                    <div style="display: flex; flex-direction: column;">
+                        <span style="font-weight: bold; font-size: 1.5rem;">VIBE N VENTURE</span>
+                        <!-- Tagline -->
+                        <small class="text-muted" style="font-size: 1rem;">Event Planner</small>
+                    </div>
                 </a>
 
-                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
+                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4 ticket-button">Buy Ticket</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
