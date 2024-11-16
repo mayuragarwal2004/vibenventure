@@ -107,135 +107,183 @@
           </div>
         </div>
       </nav>
+<!-- ----------------------------------------------------------------------------------------------------- -->
+       <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+      <h2 class="section-title">My Portfolio</h2>
+      <div class="portfolio-wrapper">
+          <!-- Portfolio Item 1 -->
+          <div class="portfolio-item" data-event-id="1">
+              <img src="images/event a2.jpg" alt="Portfolio 1">
+              <h3>Event 1</h3>
+              <p>Short description of the project.</p>
+          </div>
+          <!-- Portfolio Item 2 -->
+          <div class="portfolio-item" data-event-id="2">
+              <img src="images/event b2.jpg" alt="Portfolio 2">
+              <h3>Event 2</h3>
+              <p>Short description of the project.</p>
+          </div>
+          <!-- Portfolio Item 3 -->
+          <div class="portfolio-item" data-event-id="3">
+              <img src="images/event3 c3.jpg" alt="Portfolio 3">
+              <h3>Event 3</h3>
+              <p>Short description of the project.</p>
+          </div>
+          <!-- Add more portfolio items as needed -->
+      </div>
+  </section>
 
-      <section id="portfolio" class="portfolio-section">
-        <h2 class="section-title">My Portfolio</h2>
-        <div class="slider-container">
+  <!-- Modal Structure -->
+  <div id="portfolioModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
           <button class="slider-btn prev-btn">&#10094;</button>
           <div class="slider-wrapper">
-            <div class="slider">
-              <!-- Portfolio Item 1 -->
-              <div class="portfolio-item">
-                <img src="/images/" alt="Portfolio 1">
-                <h3>Project Title 1</h3>
-                <p>Short description of the project.</p>
+              <div class="slider" id="modalSlider">
+                  <!-- Slides will be injected here dynamically -->
               </div>
-              <!-- Portfolio Item 2 -->
-              <div class="portfolio-item">
-                <img src="portfolio2.jpg" alt="Portfolio 2">
-                <h3>Project Title 2</h3>
-                <p>Short description of the project.</p>
-              </div>
-              <!-- Portfolio Item 3 -->
-              <div class="portfolio-item">
-                <img src="portfolio3.jpg" alt="Portfolio 3">
-                <h3>Project Title 3</h3>
-                <p>Short description of the project.</p>
-              </div>
-            </div>
           </div>
           <button class="slider-btn next-btn">&#10095;</button>
-        </div>
-      </section>
-      
-      <!-- Add the following styles -->
-      <style>
-      /* Portfolio Section Styles */
-      .portfolio-section {
-        text-align: center;
-        padding: 50px 20px;
-        background-color: #f4f4f4;
+      </div>
+  </div>
+
+    <script>
+      // Event Data: Define images for each portfolio item
+      const eventImages = {
+        1: [
+          { src: "images/event b2.jpg", alt: "Event 1 Image 1" },
+          { src: "images/event a3.jpg", alt: "Event 1 Image 2" },
+          { src: "images/event b2.jpg", alt: "Event 1 Image 3" },
+        ],
+        2: [
+          { src: "images/event2 b2.jpg", alt: "Event 2 Image 1" },
+          { src: "images/event2-2.jpg", alt: "Event 2 Image 2" },
+          { src: "images/event2-3.jpg", alt: "Event 2 Image 3" },
+        ],
+        3: [
+          { src: "images/event3 c1.jpg", alt: "Event 3 Image 1" },
+          { src: "images/event3-2.jpg", alt: "Event 3 Image 2" },
+          { src: "images/event3 c2.jpeg.jpg", alt: "Event 3 Image 3" },
+        ],
+        // Add more events and images as needed
+      };
+
+      const portfolioItems = document.querySelectorAll(".portfolio-item");
+      const modal = document.getElementById("portfolioModal");
+      const closeModal = document.querySelector(".close");
+      const modalSlider = document.getElementById("modalSlider");
+      const prevBtn = document.querySelector(".prev-btn");
+      const nextBtn = document.querySelector(".next-btn");
+
+      let currentSlideIndex = 0;
+
+      // Function to open modal and load images
+      function openModal(eventId) {
+        const images = eventImages[eventId];
+        if (!images) return;
+
+        // Clear existing slides
+        modalSlider.innerHTML = "";
+
+        // Populate slider with images
+        images.forEach((image) => {
+          const slide = document.createElement("div");
+          slide.classList.add("slider-item");
+          slide.innerHTML = `<img src="${image.src}" alt="${image.alt}">`;
+          modalSlider.appendChild(slide);
+        });
+
+        // Reset slider position
+        currentSlideIndex = 0;
+        updateSlider();
+
+        // Display the modal
+        modal.style.display = "block";
       }
-      
-      .section-title {
-        font-size: 2rem;
-        margin-bottom: 20px;
+
+      // Function to close modal
+      function closeModalFunc() {
+        modal.style.display = "none";
       }
-      
-      .slider-container {
-        position: relative;
-        max-width: 80%;
-        margin: 0 auto;
-        overflow: hidden;
+
+      // Function to update slider position
+      function updateSlider() {
+        modalSlider.style.transform = `translateX(-${
+          currentSlideIndex * 100
+        }%)`;
       }
-      
-      .slider-wrapper {
-        display: flex;
-        overflow: hidden;
+
+      // Function to show next slide
+      function showNextSlide() {
+        const totalSlides = eventImages[getCurrentEventId()].length;
+        currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+        updateSlider();
       }
-      
-      .slider {
-        display: flex;
-        transition: transform 0.4s ease-in-out;
+
+      // Function to show previous slide
+      function showPrevSlide() {
+        const totalSlides = eventImages[getCurrentEventId()].length;
+        currentSlideIndex =
+          (currentSlideIndex - 1 + totalSlides) % totalSlides;
+        updateSlider();
       }
-      
-      .portfolio-item {
-        flex: 0 0 100%;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin: 10px;
-        background-color: #fff;
-        border-radius: 8px;
-        padding: 10px;
-        text-align: center;
+
+      // Helper to get current event ID based on active slides
+      function getCurrentEventId() {
+        // Find which event is currently being viewed
+        // This assumes that when the modal is open, only one event's images are loaded
+        // You might need to adjust this based on your implementation
+        for (let eventId in eventImages) {
+          if (
+            eventImages[eventId].some((image) =>
+              modalSlider.innerHTML.includes(image.src)
+            )
+          ) {
+            return eventId;
+          }
+        }
+        return null;
       }
-      
-      .portfolio-item img {
-        width: 100%;
-        border-radius: 8px;
-      }
-      
-      .portfolio-item h3 {
-        margin: 10px 0 5px;
-      }
-      
-      .portfolio-item p {
-        color: #666;
-      }
-      
-      .slider-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        border-radius: 50%;
-      }
-      
-      .prev-btn {
-        left: 10px;
-      }
-      
-      .next-btn {
-        right: 10px;
-      }
-      
-      .slider-btn:hover {
-        background-color: #333;
-      }
-      </style>
-      
-      <!-- Add the following script -->
-      <script>
-      const slider = document.querySelector('.slider');
-      const prevBtn = document.querySelector('.prev-btn');
-      const nextBtn = document.querySelector('.next-btn');
-      
-      let slideIndex = 0;
-      const totalSlides = document.querySelectorAll('.portfolio-item').length;
-      
-      nextBtn.addEventListener('click', () => {
-        slideIndex = (slideIndex + 1) % totalSlides;
-        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+
+      // Event Listeners for Portfolio Items
+      portfolioItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const eventId = item.getAttribute("data-event-id");
+          openModal(eventId);
+        });
       });
-      
-      prevBtn.addEventListener('click', () => {
-        slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
-        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+
+      // Event Listeners for Modal Controls
+      closeModal.addEventListener("click", closeModalFunc);
+      window.addEventListener("click", (e) => {
+        if (e.target == modal) {
+          closeModalFunc();
+        }
       });
-      </script>
+
+      nextBtn.addEventListener("click", showNextSlide);
+      prevBtn.addEventListener("click", showPrevSlide);
+
+      // Optional: Keyboard Navigation
+      document.addEventListener("keydown", (e) => {
+        if (modal.style.display === "block") {
+          if (e.key === "ArrowRight") {
+            showNextSlide();
+          } else if (e.key === "ArrowLeft") {
+            showPrevSlide();
+          } else if (e.key === "Escape") {
+            closeModalFunc();
+          }
+        }
+      });
+    </script> 
+
+
+
+
+
+<!-- ----------------------------------------------------------------------------------------------------- -->
       
     </main>
 

@@ -397,18 +397,60 @@
     </section>
     
       <!-- Modal Structure -->
-      <div id="portfolioModal" class="modal">
+    <!-- <div id="portfolioModal" class="modal">
         <span class="close">&times;</span>
         <div class="modal-content">
           <button class="slider-btn prev-btn">&#10094;</button>
           <div class="slider-wrapper">
             <div class="slider" id="modalSlider">
-              <!-- Slides will be injected here dynamically -->
-            </div>
+               Slides will be injected here dynamically -->
+            <!-- </div>
           </div>
           <button class="slider-btn next-btn">&#10095;</button>
         </div>
-      </div>
+      </div>-->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <h2 class="section-title">My Portfolio</h2>
+        <div class="portfolio-wrapper">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item" data-event-id="1">
+                <img src="images/event a2.jpg" alt="Portfolio 1">
+                <h3>Event 1</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item" data-event-id="2">
+                <img src="images/event b2.jpg" alt="Portfolio 2">
+                <h3>Event 2</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item" data-event-id="3">
+                <img src="images/event3 c3.jpg" alt="Portfolio 3">
+                <h3>Event 3</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="portfolioModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <button class="slider-btn prev-btn">&#10094;</button>
+            <div class="slider-wrapper">
+                <div class="slider" id="modalSlider">
+                    <!-- Slides will be injected here dynamically -->
+                </div>
+            </div>
+            <button class="slider-btn next-btn">&#10095;</button>
+        </div>
+    </div>
+
       <script>
         // Event Data: Define images for each portfolio item
         const eventImages = {
@@ -538,7 +580,7 @@
             }
           }
         });
-      </script>
+      </script> 
 
       <!-- <section class="pricing-section section-padding section-bg" id="section_5">
             <div class="container">
