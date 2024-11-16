@@ -756,6 +756,15 @@ strong {
   flex-direction: row-reverse;
 }
 
+.about-main .services-info,
+.about-vision .services-info {
+  padding-right: 3rem;
+}
+
+.about-mission .services-info {
+  padding-left: 3rem;
+}
+
 @media (max-width: 991px) {
   .about-heading {
     font-size: 30px;
@@ -776,6 +785,15 @@ strong {
   }
   .about-mission {
     flex-direction: column-reverse;
+  }
+
+  .about-main .services-info,
+  .about-vision .services-info {
+    padding-right: 0;
+  }
+
+  .about-mission .services-info {
+    padding-left: 0;
   }
 }
 
@@ -876,6 +894,27 @@ strong {
 
 .artists-hover hr {
   margin: 1.5rem 0;
+}
+
+.artists-hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.artists-hover h3 {
+  font-family: "Philosopher", sans-serif;
+  color: #f6b355;
+  margin-bottom: 10px;
+}
+
+.artists-hover h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
 }
 
 /*---------------------------------------
