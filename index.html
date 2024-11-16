@@ -1,479 +1,747 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <title>VIBE N VENTURE</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
 
-    <link href="css/vibenventure.css" rel="stylesheet">
+    <link href="css/vibenventure.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <main>
+      <a href="https://wa.me/9258137337" class="whatsapp-float" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+          class="whatsapp-icon"
+        />
+      </a>
 
-        <a href="https://wa.me/9258137337" class="whatsapp-float" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
-        </a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="/"
+            style="text-decoration: none"
+          >
+            <!-- Brand name -->
+            <img
+              src="images/A1-01.png"
+              alt="VIBE N VENTURE Logo"
+              class="logo me-4"
+              style="height: 60px"
+            />
+            <div style="display: flex; flex-direction: column">
+              <span style="font-weight: bold; font-size: 1.5rem"
+                >VIBE N VENTURE</span
+              >
+              <!-- Tagline -->
+              <small class="text-muted" style="font-size: 1rem"
+                >Event Planner</small
+              >
+            </div>
+          </a>
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="/" style="text-decoration: none;">
-                    <!-- Brand name -->
-                    <img src="images/A1-01.png" alt="VIBE N VENTURE Logo" class="logo me-4" style="height: 60px;">
-                    <div style="display: flex; flex-direction: column;">
-                        <span style="font-weight: bold; font-size: 1.5rem;">VIBE N VENTURE</span>
-                        <!-- Tagline -->
-                        <small class="text-muted" style="font-size: 1rem;">Event Planner</small>
-                    </div>
-                </a>
+          <a
+            href="ticket.html"
+            class="btn custom-btn d-lg-none ms-auto me-4 ticket-button"
+            >Buy Ticket</a
+          >
 
-                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4 ticket-button">Buy Ticket</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+              <li class="nav-item">
+                <a class="nav-link click-scroll active" href="/">Home</a>
+              </li>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll active" href="/">Home</a>
-                        </li>
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="about.html">About</a>
+              </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="about.html">About</a>
-                        </li>
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="services.html"
+                  >Services</a
+                >
+              </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="services.html">Services</a>
-                        </li>
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="portfolio.html">Portfolio</a>
-                        </li>
-
-                        <!-- <li class="nav-item">
+              <!-- <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_5">Pricing</a>
                         </li> -->
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="contact.html">Contact</a>
+              </li>
+            </ul>
 
-                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Book Your Events</a>
-                </div>
-            </div>
-        </nav>
+            <a href="ticket.html" class="btn custom-btn d-lg-block d-none"
+              >Book Your Event</a
+            >
+          </div>
+        </div>
+      </nav>
 
+      <section class="hero-section" id="section_1">
+        <div class="section-overlay"></div>
 
-        <section class="hero-section" id="section_1">
-            <div class="section-overlay"></div>
-
-            <div class="container d-flex justify-content-center align-items-center">
-                <div class="row">
-
-                    <div class="col-12 mt-auto mb-5 text-center">
-                        
-
-                        <h1 class="text-white mb-5">Night Live 2023</h1>
-                        <p class="text-white mb-5">"Creating Moments, Curating Memories."</p>
-                        <a class="btn custom-btn smoothscroll" href="#section_2">Let's begin</a>
-                    </div>
-
-                    <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
-                        <div class="date-wrap">
-                            <h5 class="text-white">
-                                <i class="custom-icon bi-clock me-2"></i>
-                                10 - 12<sup>th</sup>, Dec 2023
-                            </h5>
-                        </div>
-
-                        <div class="location-wrap mx-auto py-3 py-lg-0">
-                            <h5 class="text-white">
-                                <i class="custom-icon bi-geo-alt me-2"></i>
-                                National Center, United States
-                            </h5>
-                        </div>
-
-                        <div class="social-share">
-                            <ul class="social-icon d-flex align-items-center justify-content-center">
-                                <span class="text-white me-3">Share:</span>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                        <span class="bi-facebook"></span>
-                                    </a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                        <span class="bi-twitter"></span>
-                                    </a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                        <span class="bi-instagram"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="container d-flex justify-content-center align-items-center">
+          <div class="row">
+            <div class="col-12 mt-auto mb-5 text-center">
+              <h1 class="text-white mb-5">Night Live 2023</h1>
+              <p class="text-white mb-5">
+                "Creating Moments, Curating Memories."
+              </p>
+              <a class="btn custom-btn smoothscroll" href="#section_2"
+                >Let's begin</a
+              >
             </div>
 
-            <div class="video-wrap">
-                <!-- Background image will be applied through CSS -->
-            </div>
-            
-        </section>
-       
-        
-
-        <section class="about-section section-padding" id="section_2">
-            <div class="container">
-              <div class="row align-items-center">
-                <!-- About Us Content -->
-                <div class="col-lg-6 col-12 mb-4">
-                  <div class="services-info">
-                    <h2 class="text-white mb-4">About VIBE N VENTURE</h2>
-                    <p class="text-white">
-                      At VIBE N VENTURE, we believe every event is a story waiting to be told. As a premier event planning company, we are dedicated to crafting unforgettable experiences that resonate with passion, creativity, and meticulous attention to detail. From vibrant corporate gatherings to intimate social celebrations, our team tailors each event to reflect the unique style and vision of our clients.
-                    </p>
-                    <h6 class="text-white mt-4">Once in a Lifetime Experience</h6>
-                    <p class="text-white">VIBE N VENTURE is here to transform moments into lasting memories.</p>
-                    <h6 class="text-white mt-4">Whole Night Party</h6>
-                    <p class="text-white">Please tell your friends about our website. Thank you.</p>
-                  </div>
-                </div>
-                <!-- About Us Image -->
-                <div class="col-lg-6 col-12">
-                  <div class="about-text-wrap">
-                    <img src="images/pexels-alexander-suhorucov-6457579.jpg" alt="About VIBE N VENTURE" class="about-image img-fluid rounded">
-                  </div>
-                </div>
+            <div
+              class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center"
+            >
+              <div class="date-wrap">
+                <h5 class="text-white">
+                  <i class="custom-icon bi-clock me-2"></i>
+                  10 - 12<sup>th</sup>, Dec 2023
+                </h5>
               </div>
-          
-              <div class="row align-items-center mt-5">
-                <!-- Mission Content -->
-                <div class="col-lg-6 col-12 order-lg-1 order-2">
-                  <div class="services-info">
-                    
-                    <h2 class="text-white mb-4">Mission</h2>
-                    <p class="text-white">
-                        Our mission is to create meaningful and unforgettable events that bring people closer together, celebrating the bonds of love, friendship, and family. We believe that every event, whether it’s a wedding, milestone celebration, or corporate gathering, should be as unique and special as the people it brings together. By deeply understanding our clients' visions and dreams, we craft experiences that are personal, memorable, and filled with joy.
 
-                       <br> We are committed to providing exceptional service and unparalleled attention to detail in every step of the planning process. From the initial concept to the final moment, we strive to deliver flawless execution with creativity, professionalism, and dedication. Our goal is to relieve the stress of event planning so that our clients can focus on what truly matters—cherishing every moment with their loved ones.
-                        
-                       <br> By fostering a culture of passion, collaboration, and innovation, we aim to leave a positive and lasting impact on every individual we serve. We measure our success not just by the events we plan, but by the memories we create, the relationships we strengthen, and the joy we bring to each and every guest.
-                    </p>
-                  </div>
-                </div>
-                <!-- Mission Image -->
-                <div class="col-lg-6 col-12 order-lg-2 order-1">
-                  <div class="about-text-wrap">
-                    <img src="images/mission.jpg" alt="Mission" class="about-image img-fluid rounded">
-                  </div>
-                </div>
+              <div class="location-wrap mx-auto py-3 py-lg-0">
+                <h5 class="text-white">
+                  <i class="custom-icon bi-geo-alt me-2"></i>
+                  National Center, United States
+                </h5>
               </div>
-          
-              <div class="row align-items-center mt-5">
-                <!-- Vision Content -->
-                <div class="col-lg-6 col-12 mb-4">
-                  <div class="services-info">
-                    <h2 class="text-white mb-4">Vision</h2>
-                    <p class="text-white">
-                        Our vision is to be a leading name in the event planning industry, known for transforming ideas and dreams into reality through innovative and heartfelt experiences. We aspire to be the trusted partner for clients who seek meaningful celebrations that leave a lasting impression on their hearts and the hearts of their guests. Our approach is rooted in empathy, creativity, and the belief that every gathering has the power to bring people together and create cherished memories.
-                        <br><br>
-                        We aim to set a new standard in event planning by continuously pushing the boundaries of design, logistics, and hospitality. Through a combination of meticulous planning, artistic expression, and cutting-edge trends, we strive to create extraordinary events that resonate on an emotional level. Our team’s unwavering dedication to excellence ensures that each occasion is a masterpiece that tells a unique story.
-                        <br><br>
-                        As we look to the future, we are committed to growing with integrity, passion, and a sense of purpose. We envision our brand as a source of inspiration and joy, enriching lives by fostering stronger connections among families, friends, and communities through beautifully curated experiences. Together, we aim to create not just events, but moments that last a lifetime.
-                    </p>
-                  </div>
-                </div>
-                <!-- Vision Image -->
-                <div class="col-lg-6 col-12">
-                  <div class="about-text-wrap">
-                    <img src="images/vision.jpg" alt="Vision" class="about-image img-fluid rounded">
-                  </div>
-                </div>
+
+              <div class="social-share">
+                <ul
+                  class="social-icon d-flex align-items-center justify-content-center"
+                >
+                  <span class="text-white me-3">Share:</span>
+
+                  <li class="social-icon-item">
+                    <a href="#" class="social-icon-link">
+                      <span class="bi-facebook"></span>
+                    </a>
+                  </li>
+
+                  <li class="social-icon-item">
+                    <a href="#" class="social-icon-link">
+                      <span class="bi-twitter"></span>
+                    </a>
+                  </li>
+
+                  <li class="social-icon-item">
+                    <a href="#" class="social-icon-link">
+                      <span class="bi-instagram"></span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </section>
-          
-        
+          </div>
+        </div>
 
-          <section class="artists-section section-padding" id="section_3" style="padding: 60px 0;">
-    <div class="container">
-        <div class="row justify-content-center">
+        <div class="video-wrap">
+          <!-- Background image will be applied through CSS -->
+        </div>
+      </section>
+
+      <section class="about-section section-padding" id="section_2">
+        <div class="container">
+          <div class="row align-items-center about-main">
+            <!-- About Us Content -->
+            <div class="col-lg-6 col-12 mb-4">
+              <div class="services-info">
+                <h2 class="text-white mb-4">About VIBE N VENTURE</h2>
+                <p class="text-white about-text">
+                  At VIBE N VENTURE, we believe every event is a story waiting
+                  to be told. As a premier event planning company, we are
+                  dedicated to crafting unforgettable experiences that resonate
+                  with passion, creativity, and meticulous attention to detail.
+                  From vibrant corporate gatherings to intimate social
+                  celebrations, our team tailors each event to reflect the
+                  unique style and vision of our clients.
+                </p>
+                <h6 class="text-white mt-4">Once in a Lifetime Experience</h6>
+                <p class="text-white about-text">
+                  VIBE N VENTURE is here to transform moments into lasting
+                  memories.
+                </p>
+                <h6 class="text-white mt-4">Whole Night Party</h6>
+                <p class="text-white about-text">
+                  Please tell your friends about our website. Thank you.
+                </p>
+              </div>
+            </div>
+            <!-- About Us Image -->
+            <div class="col-lg-6 col-12">
+              <div class="about-text-wrap">
+                <img
+                  src="images/aboutus.png"
+                  alt="About VIBE N VENTURE"
+                  class="about-image img-fluid rounded"
+                  style="box-shadow: unset"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center mt-5 about-mission">
+            <!-- Mission Content -->
+            <div class="col-lg-6 col-12 order-lg-1 order-2">
+              <div class="services-info">
+                <h2 class="text-white mb-4">Mission</h2>
+                <p class="text-white about-text">
+                  Our mission is to create meaningful and unforgettable events
+                  that bring people closer together, celebrating the bonds of
+                  love, friendship, and family. We believe that every event,
+                  whether it’s a wedding, milestone celebration, or corporate
+                  gathering, should be as unique and special as the people it
+                  brings together. By deeply understanding our clients' visions
+                  and dreams, we craft experiences that are personal, memorable,
+                  and filled with joy.
+                </p>
+
+                <p class="text-white about-text">
+                  We are committed to providing exceptional service and
+                  unparalleled attention to detail in every step of the planning
+                  process. From the initial concept to the final moment, we
+                  strive to deliver flawless execution with creativity,
+                  professionalism, and dedication. Our goal is to relieve the
+                  stress of event planning so that our clients can focus on what
+                  truly matters—cherishing every moment with their loved ones.
+                </p>
+              </div>
+            </div>
+            <!-- Mission Image -->
+            <div class="col-lg-6 col-12 order-lg-2 order-1">
+              <div class="about-text-wrap">
+                <img
+                  src="images/mission.jpg"
+                  alt="Mission"
+                  class="about-image img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center mt-5 about-vision">
+            <!-- Vision Content -->
+            <div class="col-lg-6 col-12 mb-4">
+              <div class="services-info">
+                <h2 class="text-white mb-4">Vision</h2>
+                <p class="text-white about-text">
+                  Our vision is to be a leading name in the event planning
+                  industry, known for transforming ideas and dreams into reality
+                  through innovative and heartfelt experiences. We aspire to be
+                  the trusted partner for clients who seek meaningful
+                  celebrations that leave a lasting impression on their hearts
+                  and the hearts of their guests. Our approach is rooted in
+                  empathy, creativity, and the belief that every gathering has
+                  the power to bring people together and create cherished
+                  memories.
+                </p>
+                <p class="text-white about-text">
+                  We aim to set a new standard in event planning by continuously
+                  pushing the boundaries of design, logistics, and hospitality.
+                  Through a combination of meticulous planning, artistic
+                  expression, and cutting-edge trends, we strive to create
+                  extraordinary events that resonate on an emotional level. Our
+                  team’s unwavering dedication to excellence ensures that each
+                  occasion is a masterpiece that tells a unique story.
+                </p>
+              </div>
+            </div>
+            <!-- Vision Image -->
+            <div class="col-lg-6 col-12">
+              <div class="about-text-wrap">
+                <img
+                  src="images/vision.jpg"
+                  alt="Vision"
+                  class="about-image img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="artists-section section-padding"
+        id="section_3"
+        style="padding: 60px 0"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <h1 class="mb-4" style="font-size: 2.5rem; font-weight: bold;">Our Services</h1><br><br>
-                <!-- <p style="font-size: 1.1rem; line-height: 1.8;">Wedding Arrangement, Corporate Events, Anniversary Party, Event Management, Baby Shower Event, Birthday Party</p> -->
+              <h1 class="mb-4" style="font-size: 2.5rem; font-weight: bold">
+                Our Services
+              </h1>
+              <br /><br />
+              <!-- <p style="font-size: 1.1rem; line-height: 1.8;">Wedding Arrangement, Corporate Events, Anniversary Party, Event Management, Baby Shower Event, Birthday Party</p> -->
             </div>
+          </div>
+
+          <!-- First Row for Services -->
+          <div class="row" style="margin-bottom: 30px">
+            <div class="col-lg-6 col-12" style="margin-bottom: 30px">
+              <div class="artists-thumb">
+                <div class="artists-image-wrap">
+                  <img
+                    src="images/Wedding Arrangement.jpg"
+                    class="artists-image img-fluid"
+                    style="border-radius: 10px"
+                  />
+                </div>
+                <div
+                  class="artists-hover"
+                  style="
+                    background-color: rgba(0, 0, 0, 0.6);
+                    color: #fff;
+                    padding: 20px;
+                    border-radius: 10px;
+                    text-align: left;
+                  "
+                >
+                  <h3
+                    style="
+                      font-family: 'Philosopher', sans-serif;
+                      color: #f6b355;
+                      text-align: center;
+                    "
+                  >
+                    <strong>WEDDING ARRANGEMENT</strong>
+                  </h3>
+
+                  <h5
+                    style="
+                      color: #fff;
+                      font-family: 'Montserrat';
+                      text-align: center;
+                    "
+                  >
+                    Bringing your dream wedding to life with elegance,
+                    precision, and heartfelt memories
+                  </h5>
+
+                  <p class="mb-0">
+                    <strong></strong> <a href="#" style="color: #fff"></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12" style="margin-bottom: 30px">
+              <div class="artists-thumb">
+                <div class="artists-image-wrap">
+                  <img
+                    src="images/Baby Shower Event.jpg"
+                    class="artists-image img-fluid"
+                    style="border-radius: 10px"
+                  />
+                </div>
+                <div
+                  class="artists-hover"
+                  style="
+                    background-color: rgba(0, 0, 0, 0.6);
+                    color: #fff;
+                    padding: 20px;
+                    border-radius: 10px;
+                    text-align: left;
+                  "
+                >
+                  <h3
+                    style="
+                      font-family: 'Philosopher', sans-serif;
+                      color: #f6b355;
+                      text-align: center;
+                    "
+                  >
+                    <strong>BABY SHOWER ARRANGEMENT</strong>
+                  </h3>
+
+                  <h5
+                    style="
+                      color: #fff;
+                      font-family: 'Montserrat';
+                      text-align: center;
+                    "
+                  >
+                    Crafting joyful celebrations to welcome your little one with
+                    love and laughter.
+                  </h5>
+
+                  <!-- <p><strong>Music:</strong> Pop</p>-->
+                  <!-- <hr style="border-color: #fff;">
+                        <p class="mb-0"><strong>Youtube Channel:</strong> <a href="#" style="color: #fff;">Bruno Official</a></p> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Row for Services -->
+            <div class="row" style="margin-bottom: 30px">
+              <div class="col-lg-6 col-12" style="margin-bottom: 30px">
+                <div class="artists-thumb">
+                  <div class="artists-image-wrap">
+                    <img
+                      src="images/Event Management.jpg"
+                      class="artists-image img-fluid"
+                      style="border-radius: 10px"
+                    />
+                  </div>
+                  <div
+                    class="artists-hover"
+                    style="
+                      background-color: rgba(0, 0, 0, 0.6);
+                      color: #fff;
+                      padding: 20px;
+                      border-radius: 10px;
+                      text-align: left;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Philosopher', sans-serif;
+                        color: #f6b355;
+                        text-align: center;
+                      "
+                    >
+                      <strong>EVENT MANAGEMENT</strong>
+                    </h3>
+
+                    <h5
+                      style="
+                        color: #fff;
+                        font-family: 'Montserrat';
+                        text-align: center;
+                      "
+                    >
+                      "Expertly managing every detail to create seamless and
+                      unforgettable events."
+                    </h5>
+                    <!-- <p class="mb-0"><strong>Youtube Channel:</strong> <a href="#" style="color: #fff;">Artist 3 Official</a></p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12" style="margin-bottom: 30px">
+                <div class="artists-thumb">
+                  <div class="artists-image-wrap">
+                    <img
+                      src="images/Anniversary Party.jpg"
+                      class="artists-image img-fluid"
+                      style="border-radius: 10px"
+                    />
+                  </div>
+                  <div
+                    class="artists-hover"
+                    style="
+                      background-color: rgba(0, 0, 0, 0.6);
+                      color: #fff;
+                      padding: 20px;
+                      border-radius: 10px;
+                      text-align: left;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Philosopher', sans-serif;
+                        color: #f6b355;
+                        text-align: center;
+                      "
+                    >
+                      <strong>ANIVERSARY MANAGEMENT</strong>
+                    </h3>
+
+                    <h5
+                      style="
+                        color: #fff;
+                        font-family: 'Montserrat';
+                        text-align: center;
+                      "
+                    >
+                      Honoring your love story with memorable and personalized
+                      celebrations.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Row for Services -->
+            <div class="row" style="margin-bottom: 30px">
+              <div class="col-lg-6 col-12" style="margin-bottom: 30px">
+                <div class="artists-thumb">
+                  <div class="artists-image-wrap">
+                    <img
+                      src="images/Corporate Events.jpg"
+                      class="artists-image img-fluid"
+                      style="border-radius: 10px"
+                    />
+                  </div>
+                  <div
+                    class="artists-hover"
+                    style="
+                      background-color: rgba(0, 0, 0, 0.6);
+                      color: #fff;
+                      padding: 20px;
+                      border-radius: 10px;
+                      text-align: left;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Philosopher', sans-serif;
+                        color: #f6b355;
+                        text-align: center;
+                        text-align: center;
+                      "
+                    >
+                      <strong>CORPORATE EVENTS</strong>
+                    </h3>
+
+                    <h5
+                      style="
+                        color: #fff;
+                        font-family: 'Montserrat';
+                        text-align: center;
+                      "
+                    >
+                      Delivering professional, impactful corporate events that
+                      engage and inspire.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12" style="margin-bottom: 10px">
+                <div class="artists-thumb">
+                  <div class="artists-image-wrap">
+                    <img
+                      src="images/Birthday Party.jpeg.jpg"
+                      class="artists-image img-fluid"
+                      style="border-radius: 10px"
+                    />
+                  </div>
+                  <div
+                    class="artists-hover"
+                    style="
+                      background-color: rgba(0, 0, 0, 0.6);
+                      color: #fff;
+                      padding: 20px;
+                      border-radius: 10px;
+                      text-align: left;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Philosopher', sans-serif;
+                        color: #f6b355;
+                        text-align: center;
+                      "
+                    >
+                      <strong>BIRTHDAY PARTY</strong>
+                    </h3>
+
+                    <h5
+                      style="
+                        color: #fff;
+                        font-family: 'Montserrat';
+                        text-align: center;
+                      "
+                    >
+                      Honoring your love story with memorable and personalized
+                      celebrations.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- First Row for Services -->
-        <div class="row" style="margin-bottom: 30px;">
-            <div class="col-lg-6 col-12" style="margin-bottom: 30px;">
-                <div class="artists-thumb">
-                    <div class="artists-image-wrap">
-                        <img src="images/Wedding Arrangement.jpg" class="artists-image img-fluid" style="border-radius: 10px;">
-                    </div>
-                    <div class="artists-hover" style="background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 20px; border-radius: 10px; text-align: left;">
-                    
-                        <h3 style="font-family: 'Philosopher', sans-serif; color: #f6b355; text-align: center;"><strong>WEDDING ARRANGEMENT</strong></h3>
-
-                        <h5 style="color: #fff; font-family: 'Montserrat';text-align: center;">Bringing your dream wedding to life with elegance, precision, and heartfelt memories</h5>
-                        
-                        <p class="mb-0"><strong></strong> <a href="#" style="color: #fff;"></a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-12" style="margin-bottom: 30px;">
-                <div class="artists-thumb">
-                    <div class="artists-image-wrap">
-                        <img src="images/Baby Shower Event.jpg" class="artists-image img-fluid" style="border-radius: 10px;">
-                    </div>
-                    <div class="artists-hover" style="background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 20px; border-radius: 10px; text-align: left;">
-                        <h3 style="font-family: 'Philosopher', sans-serif; color: #f6b355; text-align: center;"><strong>BABY SHOWER ARRANGEMENT</strong></h3>
-
-
-
-                        <h5 style="color: #fff; font-family: 'Montserrat';text-align: center;">Crafting joyful celebrations to welcome your little one with love and laughter.</h5>
-
-                        
-                        <!-- <p><strong>Music:</strong> Pop</p>-->
-                        <!-- <hr style="border-color: #fff;">
-                        <p class="mb-0"><strong>Youtube Channel:</strong> <a href="#" style="color: #fff;">Bruno Official</a></p> --> 
-                </div>
-            </div>
-        </div>
-
-        <!-- Second Row for Services -->
-        <div class="row" style="margin-bottom: 30px;">
-            <div class="col-lg-6 col-12" style="margin-bottom: 30px;">
-                <div class="artists-thumb">
-                    <div class="artists-image-wrap">
-                        <img src="images/Event Management.jpg" class="artists-image img-fluid" style="border-radius: 10px;">
-                    </div>
-                    <div class="artists-hover" style="background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 20px; border-radius: 10px; text-align: left;">
-                        <h3 style="font-family: 'Philosopher', sans-serif; color: #f6b355; text-align: center;"><strong>EVENT  MANAGEMENT</strong></h3>
-
-                        <h5 style="color: #fff; font-family: 'Montserrat';text-align: center;">"Expertly managing every detail to create seamless and unforgettable events."
-                        </h5>
-                        <!-- <p class="mb-0"><strong>Youtube Channel:</strong> <a href="#" style="color: #fff;">Artist 3 Official</a></p> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-12" style="margin-bottom: 30px;">
-                <div class="artists-thumb">
-                    <div class="artists-image-wrap">
-                        <img src="images/Anniversary Party.jpg" class="artists-image img-fluid" style="border-radius: 10px;">
-                    </div>
-                    <div class="artists-hover" style="background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 20px; border-radius: 10px; text-align: left;">
-                       
-                        <h3 style="font-family: 'Philosopher', sans-serif; color: #f6b355; text-align: center;"><strong>ANIVERSARY  MANAGEMENT</strong></h3>
-
-                        <h5 style="color: #fff; font-family: 'Montserrat';text-align: center;">Honoring your love story with memorable and personalized celebrations.
-
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Third Row for Services -->
-        <div class="row" style="margin-bottom: 30px;">
-            <div class="col-lg-6 col-12" style="margin-bottom: 30px;">
-                <div class="artists-thumb">
-                    <div class="artists-image-wrap">
-                        <img src="images/Corporate Events.jpg" class="artists-image img-fluid" style="border-radius: 10px;">
-                    </div>
-                    <div class="artists-hover" style="background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 20px; border-radius: 10px; text-align: left;">
-               
-                        <h3 style="font-family: 'Philosopher', sans-serif; color: #f6b355; text-align: center;text-align: center;"><strong>CORPORATE  EVENTS</strong></h3>
-
-                        <h5 style="color: #fff; font-family: 'Montserrat';text-align: center;">Delivering professional, impactful corporate events that engage and inspire.
-                    </h5>            
-                        </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-12" style="margin-bottom: 10px;">
-                <div class="artists-thumb">
-                    <div class="artists-image-wrap">
-                        <img src="images/Birthday Party.jpeg.jpg" class="artists-image img-fluid" style="border-radius: 10px;">
-                    </div>
-                    <div class="artists-hover" style="background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 20px; border-radius: 10px; text-align: left;">
-                      <h3 style="font-family: 'Philosopher', sans-serif; color: #f6b355; text-align: center;"><strong>BIRTHDAY PARTY</strong></h3>
-
-                      <h5 style="color: #fff; font-family: 'Montserrat';text-align: center;">Honoring your love story with memorable and personalized celebrations.</h5>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-        
-<!-- Modal Structure -->
-<div id="portfolioModal" class="modal">
-    <span class="close">&times;</span>
-    <div class="modal-content">
-        <button class="slider-btn prev-btn">&#10094;</button>
-        <div class="slider-wrapper">
+      <!-- Modal Structure -->
+      <div id="portfolioModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <button class="slider-btn prev-btn">&#10094;</button>
+          <div class="slider-wrapper">
             <div class="slider" id="modalSlider">
-                <!-- Slides will be injected here dynamically -->
+              <!-- Slides will be injected here dynamically -->
             </div>
+          </div>
+          <button class="slider-btn next-btn">&#10095;</button>
         </div>
-        <button class="slider-btn next-btn">&#10095;</button>
-    </div>
-</div>
-<script>// Event Data: Define images for each portfolio item
-    const eventImages = {
-        1: [
+      </div>
+      <script>
+        // Event Data: Define images for each portfolio item
+        const eventImages = {
+          1: [
             { src: "images/event b2.jpg", alt: "Event 1 Image 1" },
             { src: "images/event a3.jpg", alt: "Event 1 Image 2" },
-            { src: "images/event b2.jpg", alt: "Event 1 Image 3" }
-        ],
-        2: [
+            { src: "images/event b2.jpg", alt: "Event 1 Image 3" },
+          ],
+          2: [
             { src: "images/event2 b2.jpg", alt: "Event 2 Image 1" },
             { src: "images/event2-2.jpg", alt: "Event 2 Image 2" },
-            { src: "images/event2-3.jpg", alt: "Event 2 Image 3" }
-        ],
-        3: [
+            { src: "images/event2-3.jpg", alt: "Event 2 Image 3" },
+          ],
+          3: [
             { src: "images/event3 c1.jpg", alt: "Event 3 Image 1" },
             { src: "images/event3-2.jpg", alt: "Event 3 Image 2" },
-            { src: "images/event3 c2.jpeg.jpg", alt: "Event 3 Image 3" }
-        ]
-        // Add more events and images as needed
-    };
-    
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-    const modal = document.getElementById('portfolioModal');
-    const closeModal = document.querySelector('.close');
-    const modalSlider = document.getElementById('modalSlider');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    
-    let currentSlideIndex = 0;
-    
-    // Function to open modal and load images
-    function openModal(eventId) {
-        const images = eventImages[eventId];
-        if (!images) return;
-    
-        // Clear existing slides
-        modalSlider.innerHTML = '';
-    
-        // Populate slider with images
-        images.forEach((image) => {
-            const slide = document.createElement('div');
-            slide.classList.add('slider-item');
+            { src: "images/event3 c2.jpeg.jpg", alt: "Event 3 Image 3" },
+          ],
+          // Add more events and images as needed
+        };
+
+        const portfolioItems = document.querySelectorAll(".portfolio-item");
+        const modal = document.getElementById("portfolioModal");
+        const closeModal = document.querySelector(".close");
+        const modalSlider = document.getElementById("modalSlider");
+        const prevBtn = document.querySelector(".prev-btn");
+        const nextBtn = document.querySelector(".next-btn");
+
+        let currentSlideIndex = 0;
+
+        // Function to open modal and load images
+        function openModal(eventId) {
+          const images = eventImages[eventId];
+          if (!images) return;
+
+          // Clear existing slides
+          modalSlider.innerHTML = "";
+
+          // Populate slider with images
+          images.forEach((image) => {
+            const slide = document.createElement("div");
+            slide.classList.add("slider-item");
             slide.innerHTML = `<img src="${image.src}" alt="${image.alt}">`;
             modalSlider.appendChild(slide);
-        });
-    
-        // Reset slider position
-        currentSlideIndex = 0;
-        updateSlider();
-    
-        // Display the modal
-        modal.style.display = "block";
-    }
-    
-    // Function to close modal
-    function closeModalFunc() {
-        modal.style.display = "none";
-    }
-    
-    // Function to update slider position
-    function updateSlider() {
-        modalSlider.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
-    }
-    
-    // Function to show next slide
-    function showNextSlide() {
-        const totalSlides = eventImages[getCurrentEventId()].length;
-        currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
-        updateSlider();
-    }
-    
-    // Function to show previous slide
-    function showPrevSlide() {
-        const totalSlides = eventImages[getCurrentEventId()].length;
-        currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
-        updateSlider();
-    }
-    
-    // Helper to get current event ID based on active slides
-    function getCurrentEventId() {
-        // Find which event is currently being viewed
-        // This assumes that when the modal is open, only one event's images are loaded
-        // You might need to adjust this based on your implementation
-        for (let eventId in eventImages) {
-            if (eventImages[eventId].some(image => modalSlider.innerHTML.includes(image.src))) {
-                return eventId;
-            }
+          });
+
+          // Reset slider position
+          currentSlideIndex = 0;
+          updateSlider();
+
+          // Display the modal
+          modal.style.display = "block";
         }
-        return null;
-    }
-    
-    // Event Listeners for Portfolio Items
-    portfolioItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const eventId = item.getAttribute('data-event-id');
+
+        // Function to close modal
+        function closeModalFunc() {
+          modal.style.display = "none";
+        }
+
+        // Function to update slider position
+        function updateSlider() {
+          modalSlider.style.transform = `translateX(-${
+            currentSlideIndex * 100
+          }%)`;
+        }
+
+        // Function to show next slide
+        function showNextSlide() {
+          const totalSlides = eventImages[getCurrentEventId()].length;
+          currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+          updateSlider();
+        }
+
+        // Function to show previous slide
+        function showPrevSlide() {
+          const totalSlides = eventImages[getCurrentEventId()].length;
+          currentSlideIndex =
+            (currentSlideIndex - 1 + totalSlides) % totalSlides;
+          updateSlider();
+        }
+
+        // Helper to get current event ID based on active slides
+        function getCurrentEventId() {
+          // Find which event is currently being viewed
+          // This assumes that when the modal is open, only one event's images are loaded
+          // You might need to adjust this based on your implementation
+          for (let eventId in eventImages) {
+            if (
+              eventImages[eventId].some((image) =>
+                modalSlider.innerHTML.includes(image.src)
+              )
+            ) {
+              return eventId;
+            }
+          }
+          return null;
+        }
+
+        // Event Listeners for Portfolio Items
+        portfolioItems.forEach((item) => {
+          item.addEventListener("click", () => {
+            const eventId = item.getAttribute("data-event-id");
             openModal(eventId);
+          });
         });
-    });
-    
-    // Event Listeners for Modal Controls
-    closeModal.addEventListener('click', closeModalFunc);
-    window.addEventListener('click', (e) => {
-        if (e.target == modal) {
+
+        // Event Listeners for Modal Controls
+        closeModal.addEventListener("click", closeModalFunc);
+        window.addEventListener("click", (e) => {
+          if (e.target == modal) {
             closeModalFunc();
-        }
-    });
-    
-    nextBtn.addEventListener('click', showNextSlide);
-    prevBtn.addEventListener('click', showPrevSlide);
-    
-    // Optional: Keyboard Navigation
-    document.addEventListener('keydown', (e) => {
-        if (modal.style.display === "block") {
-            if (e.key === 'ArrowRight') {
-                showNextSlide();
-            } else if (e.key === 'ArrowLeft') {
-                showPrevSlide();
-            } else if (e.key === 'Escape') {
-                closeModalFunc();
+          }
+        });
+
+        nextBtn.addEventListener("click", showNextSlide);
+        prevBtn.addEventListener("click", showPrevSlide);
+
+        // Optional: Keyboard Navigation
+        document.addEventListener("keydown", (e) => {
+          if (modal.style.display === "block") {
+            if (e.key === "ArrowRight") {
+              showNextSlide();
+            } else if (e.key === "ArrowLeft") {
+              showPrevSlide();
+            } else if (e.key === "Escape") {
+              closeModalFunc();
             }
-        }
-    });
-    </script>
-  
-        <!-- <section class="pricing-section section-padding section-bg" id="section_5">
+          }
+        });
+      </script>
+
+      <!-- <section class="pricing-section section-padding section-bg" id="section_5">
             <div class="container">
                 <div class="row">
 
@@ -555,223 +823,285 @@
             </div>
         </section> -->
 
+      <section class="contact-section section-padding" id="section_6">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-12 mx-auto">
+              <h2 class="text-center mb-4">Interested? Let's talk</h2>
 
-        <section class="contact-section section-padding" id="section_6">
-            <div class="container">
-                <div class="row">
+              <nav class="d-flex justify-content-center">
+                <div
+                  class="nav nav-tabs align-items-baseline justify-content-center"
+                  id="nav-tab"
+                  role="tablist"
+                >
+                  <button
+                    class="nav-link active"
+                    id="nav-ContactForm-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-ContactForm"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-ContactForm"
+                    aria-selected="false"
+                  >
+                    <h5>Contact Form</h5>
+                  </button>
 
-                    <div class="col-lg-8 col-12 mx-auto">
-                        <h2 class="text-center mb-4">Interested? Let's talk</h2>
-
-                        <nav class="d-flex justify-content-center">
-                            <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab"
-                                role="tablist">
-                                <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-ContactForm" type="button" role="tab"
-                                    aria-controls="nav-ContactForm" aria-selected="false">
-                                    <h5>Contact Form</h5>
-                                </button>
-
-                                <button class="nav-link" id="nav-ContactMap-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-ContactMap" type="button" role="tab"
-                                    aria-controls="nav-ContactMap" aria-selected="false">
-                                    <h5>Google Maps</h5>
-                                </button>
-                            </div>
-                        </nav>
-
-                        <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel"
-                                aria-labelledby="nav-ContactForm-tab">
-                                <form class="custom-form contact-form mb-5 mb-lg-0" action="#" method="post"
-                                    role="form">
-                                    <div class="contact-form-body">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-12">
-                                                <input type="text" name="contact-name" id="contact-name"
-                                                    class="form-control" placeholder="Full name" required>
-                                            </div>
-
-                                            <div class="col-lg-6 col-md-6 col-12">
-                                                <input type="email" name="contact-email" id="contact-email"
-                                                    pattern="[^ @]*@[^ @]*" class="form-control"
-                                                    placeholder="Email address" required>
-                                            </div>
-                                        </div>
-
-                                        <input type="text" name="contact-company" id="contact-company"
-                                            class="form-control" placeholder="Company" required>
-
-                                        <textarea name="contact-message" rows="3" class="form-control"
-                                            id="contact-message" placeholder="Message"></textarea>
-
-                                        <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                            <button type="submit" class="form-control">Send message</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="tab-pane fade" id="nav-ContactMap" role="tabpanel"
-                                aria-labelledby="nav-ContactMap-tab">
-                                <iframe class="google-map"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29974.469402870927!2d120.94861466021855!3d14.106066818082482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd777b1ab54c8f%3A0x6ecc514451ce2be8!2sTagaytay%2C%20Cavite%2C%20Philippines!5e1!3m2!1sen!2smy!4v1670344209509!5m2!1sen!2smy"
-                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <!-- You can easily copy the embed code from Google Maps -> Share -> Embed a map // -->
-                            </div>
-                        </div>
-                    </div>
-
+                  <button
+                    class="nav-link"
+                    id="nav-ContactMap-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-ContactMap"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-ContactMap"
+                    aria-selected="false"
+                  >
+                    <h5>Google Maps</h5>
+                  </button>
                 </div>
+              </nav>
+
+              <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-ContactForm"
+                  role="tabpanel"
+                  aria-labelledby="nav-ContactForm-tab"
+                >
+                  <form
+                    class="custom-form contact-form mb-5 mb-lg-0"
+                    action="#"
+                    method="post"
+                    role="form"
+                  >
+                    <div class="contact-form-body">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <input
+                            type="text"
+                            name="contact-name"
+                            id="contact-name"
+                            class="form-control"
+                            placeholder="Full name"
+                            required
+                          />
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <input
+                            type="email"
+                            name="contact-email"
+                            id="contact-email"
+                            pattern="[^ @]*@[^ @]*"
+                            class="form-control"
+                            placeholder="Email address"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <input
+                        type="text"
+                        name="contact-company"
+                        id="contact-company"
+                        class="form-control"
+                        placeholder="Company"
+                        required
+                      />
+
+                      <textarea
+                        name="contact-message"
+                        rows="3"
+                        class="form-control"
+                        id="contact-message"
+                        placeholder="Message"
+                      ></textarea>
+
+                      <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                        <button type="submit" class="form-control">
+                          Send message
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="nav-ContactMap"
+                  role="tabpanel"
+                  aria-labelledby="nav-ContactMap-tab"
+                >
+                  <iframe
+                    class="google-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29974.469402870927!2d120.94861466021855!3d14.106066818082482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd777b1ab54c8f%3A0x6ecc514451ce2be8!2sTagaytay%2C%20Cavite%2C%20Philippines!5e1!3m2!1sen!2smy!4v1670344209509!5m2!1sen!2smy"
+                    width="100%"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                  <!-- You can easily copy the embed code from Google Maps -> Share -> Embed a map // -->
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
-
     <footer class="site-footer">
-        <div class="site-footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12">
-                        <h2 class="text-white mb-lg-0">VIBE N VENTURE</h2>
-                    </div>
-
-
-                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
-                        <ul class="social-icon d-flex justify-content-lg-end">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-twitter"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-apple"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-instagram"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-youtube"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-pinterest"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+      <div class="site-footer-top">
         <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-12 mb-4 pb-2">
-                    <h5 class="site-footer-title mb-3">Links</h5>
-
-                    <ul class="site-footer-links">
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Home</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">About</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Artists</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Schedule</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Pricing</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <h5 class="site-footer-title mb-3">Have a question?</h5>
-
-                    <p class="text-white d-flex mb-1">
-                        <a href="tel: 090-080-0760" class="site-footer-link">
-                            090-080-0760
-                        </a>
-                    </p>
-
-                    <p class="text-white d-flex">
-                        <a href="mailto:hello@company.com" class="site-footer-link">
-                            hello@company.com
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
-                    <h5 class="site-footer-title mb-3">Location</h5>
-
-                    <p class="text-white d-flex mt-3 mb-2">
-                        Silang Junction South, Tagaytay, Cavite, Philippines</p>
-
-                    <a class="link-fx-1 color-contrast-higher mt-3" href="#">
-                        <span>Our Maps</span>
-                        <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="16" cy="16" r="15.5"></circle>
-                                <line x1="10" y1="18" x2="16" y2="12"></line>
-                                <line x1="16" y1="12" x2="22" y2="18"></line>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h2 class="text-white mb-lg-0">VIBE N VENTURE</h2>
             </div>
-        </div>
 
-        <div class="site-footer-bottom">
-            <div class="container">
-                <div class="row">
+            <div
+              class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center"
+            >
+              <ul class="social-icon d-flex justify-content-lg-end">
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <span class="bi-twitter"></span>
+                  </a>
+                </li>
 
-                    <div class="col-lg-3 col-12 mt-5">
-                        <p class="copyright-text">Copyright © 2024 VIBE N VENTURE </p>
-                        <!-- <p class="copyright-text">Distributed by: <a href="https://themewagon.com">ThemeWagon</a></p> -->
-                    </div>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <span class="bi-apple"></span>
+                  </a>
+                </li>
 
-                    <div class="col-lg-8 col-12 mt-lg-5">
-                        <ul class="site-footer-links">
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
-                            </li>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <span class="bi-instagram"></span>
+                  </a>
+                </li>
 
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Privacy Policy</a>
-                            </li>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <span class="bi-youtube"></span>
+                  </a>
+                </li>
 
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Your Feedback</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <span class="bi-pinterest"></span>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 mb-4 pb-2">
+            <h5 class="site-footer-title mb-3">Links</h5>
+
+            <ul class="site-footer-links">
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Home</a>
+              </li>
+
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">About</a>
+              </li>
+
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Artists</a>
+              </li>
+
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Schedule</a>
+              </li>
+
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Pricing</a>
+              </li>
+
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+            <h5 class="site-footer-title mb-3">Have a question?</h5>
+
+            <p class="text-white d-flex mb-1">
+              <a href="tel: 090-080-0760" class="site-footer-link">
+                090-080-0760
+              </a>
+            </p>
+
+            <p class="text-white d-flex">
+              <a href="mailto:hello@company.com" class="site-footer-link">
+                hello@company.com
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+            <h5 class="site-footer-title mb-3">Location</h5>
+
+            <p class="text-white d-flex mt-3 mb-2">
+              Silang Junction South, Tagaytay, Cavite, Philippines
+            </p>
+
+            <a class="link-fx-1 color-contrast-higher mt-3" href="#">
+              <span>Our Maps</span>
+              <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="16" cy="16" r="15.5"></circle>
+                  <line x1="10" y1="18" x2="16" y2="12"></line>
+                  <line x1="16" y1="12" x2="22" y2="18"></line>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-12 mt-5">
+              <p class="copyright-text">Copyright © 2024 VIBE N VENTURE</p>
+              <!-- <p class="copyright-text">Distributed by: <a href="https://themewagon.com">ThemeWagon</a></p> -->
+            </div>
+
+            <div class="col-lg-8 col-12 mt-lg-5">
+              <ul class="site-footer-links">
+                <li class="site-footer-link-item">
+                  <a href="#" class="site-footer-link"
+                    >Terms &amp; Conditions</a
+                  >
+                </li>
+
+                <li class="site-footer-link-item">
+                  <a href="#" class="site-footer-link">Privacy Policy</a>
+                </li>
+
+                <li class="site-footer-link-item">
+                  <a href="#" class="site-footer-link">Your Feedback</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- JAVASCRIPT FILES -->
@@ -780,7 +1110,5 @@
     <script src="js/jquery.sticky.js"></script>
     <!-- <script src="js/click-scroll.js"></script> -->
     <script src="js/custom.js"></script>
-
-</body>
-
+  </body>
 </html>

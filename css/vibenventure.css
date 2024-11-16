@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Montserrat:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Montserrat:wght@400&display=swap");
 /* Portfolio Section Styles */
 .portfolio-section {
   text-align: center;
@@ -147,40 +147,40 @@
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #65789e;
-  --secondary-color:              #142b39;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #142b39;
-  --custom-btn-bg-hover-color:    #f6b355;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #f6b355;
+  --white-color: #ffffff;
+  --primary-color: #65789e;
+  --secondary-color: #142b39;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #142b39;
+  --custom-btn-bg-hover-color: #f6b355;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #f6b355;
 
-  --body-font-family:             'Outfit', sans-serif;
+  --body-font-family: "Outfit", sans-serif;
 
-  --h1-font-size:                 74px;
-  --h2-font-size:                 46px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --btn-font-size:                14px;
-  --copyright-font-size:          16px;
+  --h1-font-size: 74px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --btn-font-size: 14px;
+  --copyright-font-size: 16px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-bold:             700;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 }
 :root {
-  --body-font-family: 'Montserrat', sans-serif;
-  --heading-font-family: 'Philosopher', sans-serif;
+  --body-font-family: "Montserrat", sans-serif;
+  --heading-font-family: "Philosopher", sans-serif;
 }
 
 /* Set Montserrat as the default font for body */
@@ -189,22 +189,28 @@ body {
 }
 
 /* Apply Philosopher font for headings (bold) */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
 /* Apply Philosopher font for subheadings (normal) */
-small, h6, .subheading {
+small,
+h6,
+.subheading {
   font-family: var(--heading-font-family);
   font-weight: normal;
 }
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
-
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -263,7 +269,7 @@ ul li {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -302,12 +308,12 @@ strong {
 
 .link-fx-1:hover::before {
   transform: translateX(17px) scaleX(0);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .link-fx-1:hover .icon circle {
   stroke-dashoffset: 200;
-  transition: stroke-dashoffset .2s .1s;
+  transition: stroke-dashoffset 0.2s 0.1s;
 }
 
 .link-fx-1:hover .icon line {
@@ -327,7 +333,7 @@ strong {
   height: 1px;
   background-color: currentColor;
   transform-origin: right center;
-  transition: transform .2s .1s;
+  transition: transform 0.2s 0.1s;
 }
 
 .link-fx-1 .icon {
@@ -353,18 +359,17 @@ strong {
 .link-fx-1 .icon circle {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
-  transition: stroke-dashoffset .2s;
+  transition: stroke-dashoffset 0.2s;
 }
 
 .link-fx-1 .icon line {
-  transition: transform .4s;
+  transition: transform 0.4s;
   transform-origin: 13px 15px;
 }
 
 .link-fx-1 .icon line:last-child {
   transform-origin: 19px 15px;
 }
-
 
 /*---------------------------------------
   SECTION               
@@ -417,26 +422,25 @@ strong {
   margin-right: 15px;
 }
 
-.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
-.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   color: var(--primary-color);
 }
 
 .nav-tabs h5 {
-  color: var(--p-color); 
+  color: var(--p-color);
   margin-bottom: 0;
 }
 
 .nav-tabs .nav-link.active h5,
-.nav-tabs .nav-link:focus h5, 
+.nav-tabs .nav-link:focus h5,
 .nav-tabs .nav-link:hover h5 {
   color: var(--primary-color);
 }
-
 
 /*---------------------------------------
   CUSTOM ICON COLOR               
@@ -444,7 +448,6 @@ strong {
 .custom-icon {
   color: var(--secondary-color);
 }
-
 
 /*---------------------------------------
   CUSTOM BUTTON               
@@ -484,7 +487,6 @@ strong {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   VIDEO              
 -----------------------------------------*/
@@ -504,7 +506,6 @@ strong {
   height: 100vh; 
 }  */
 
-
 /* .custom-video {
   position: absolute;
   top: 0;
@@ -514,7 +515,6 @@ strong {
   height: 100%;
 } */
 
-
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
@@ -523,7 +523,6 @@ strong {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-
 
 /*---------------------------------------
   NAVIGATION              
@@ -568,7 +567,7 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: var(--custom-btn-bg-hover-color);
 }
@@ -596,7 +595,8 @@ strong {
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
   transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease,
+    -webkit-transform 300ms 350ms ease;
   top: 0;
 }
 
@@ -621,14 +621,15 @@ strong {
 .navbar-toggler .navbar-toggler-icon:after {
   transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
   transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease,
+    -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
   background: var(--white-color);
   width: 30px;
   height: 2px;
-  content: '';
+  content: "";
 }
 
 .navbar-toggler .navbar-toggler-icon::before {
@@ -645,7 +646,6 @@ strong {
   padding: 1rem 0; /* Optional: adjust padding as needed */
 }
 
-
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
@@ -654,10 +654,10 @@ strong {
   overflow: hidden;
   padding-top: 100px;
   height: calc(100vh - 51px);
-  background-image: url('/images/bg4.jpg'); /* Add your image path here */
-  background-size: cover;        /* Ensures the image covers the section */
-  background-position: center;   /* Centers the image within the section */
-  background-repeat: no-repeat;  /* Prevents the image from repeating */
+  background-image: url("/images/bg4.jpg"); /* Add your image path here */
+  background-size: cover; /* Ensures the image covers the section */
+  background-position: center; /* Centers the image within the section */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 .hero-section small {
@@ -671,7 +671,12 @@ strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional overlay color with opacity */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional overlay color with opacity */
   z-index: 2;
   opacity: 0.45;
 }
@@ -687,88 +692,106 @@ strong {
   height: 100%;
 }
 
-
 /*---------------------------------------
   ABOUT              
 -----------------------------------------*/
 .about-section {
-    background-color: #222; /* Dark background for contrast */
-    color: #fff;
-    padding: 60px 0; /* Adds padding around the section */
+  background-color: #222; /* Dark background for contrast */
+  color: #fff;
+  padding: 60px 0; /* Adds padding around the section */
 }
 
 .about-heading {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.4;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .about-text {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #ddd;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
 }
 
 .about-subheading {
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 30px;
 }
 
 .about-image-wrap {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .about-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(231, 227, 227, 0.2); /* Soft shadow for the image */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #f6b3552b;
 }
 
 .about-image-wrap::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3); /* Dark overlay for the image */
-    border-radius: 10px;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Dark overlay for the image */
+  border-radius: 10px;
+  z-index: 1;
 }
 
 .about-text-wrap {
-    position: relative;
-    z-index: 2; /* Keeps text above the overlay */
+  position: relative;
+  z-index: 2; /* Keeps text above the overlay */
+}
+
+.about-mission {
+  flex-direction: row-reverse;
 }
 
 @media (max-width: 991px) {
-    .about-heading {
-        font-size: 30px;
-    }
+  .about-heading {
+    font-size: 30px;
+  }
 
-    .about-text {
-        font-size: 15px;
-    }
+  .about-text {
+    font-size: 15px;
+  }
 
-    .about-subheading {
-        font-size: 16px;
-    }
+  .about-subheading {
+    font-size: 16px;
+  }
+
+  .about-main,
+  .about-mission,
+  .about-vision {
+    flex-direction: column;
+  }
+  .about-mission {
+    flex-direction: column-reverse;
+  }
 }
 
-
+@media (max-width: 500px) {
+  .about-main .services-info,
+  .about-mission .services-info,
+  .about-vision .services-info {
+    padding-right: 3rem;
+  }
+}
 
 /*---------------------------------------
   TICKET               
 -----------------------------------------*/
 .ticket-section {
-  background-image: url('../images/nicholas-green-unsplash-blur.jpg');
+  background-image: url("../images/nicholas-green-unsplash-blur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -798,7 +821,6 @@ strong {
   width: 100%;
   height: 100%;
 }
-
 
 /*---------------------------------------
   ARTISTS              
@@ -856,19 +878,18 @@ strong {
   margin: 1.5rem 0;
 }
 
-
 /*---------------------------------------
   SCHEDULE              
 -----------------------------------------*/
 .schedule-section {
-  background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
+  background-image: url("../images/nainoa-shizuru-unsplash-blur.jpg");
   background-color: #242424;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .table-responsive {
-	filter: drop-shadow(2px 2px 4px #606060);
+  filter: drop-shadow(2px 2px 4px #606060);
 }
 
 .schedule-table {
@@ -911,15 +932,15 @@ strong {
 }
 
 .schedule-table .pop-background-image {
-  background-image: url('../images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg');
+  background-image: url("../images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg");
 }
 
 .schedule-table .rock-background-image {
-  background-image: url('../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg');
+  background-image: url("../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg");
 }
 
 .schedule-table .country-background-image {
-  background-image: url('../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg');
+  background-image: url("../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg");
 }
 
 .table-background-image-wrap {
@@ -936,7 +957,6 @@ strong {
   position: relative;
   z-index: 2;
 }
-
 
 /*---------------------------------------
   PRICING              
@@ -996,14 +1016,12 @@ strong {
   color: var(--link-hover-color);
 }
 
-
 /*---------------------------------------
   CONTACT               
 -----------------------------------------*/
 .google-map {
   border-radius: var(--border-radius-medium);
 }
-
 
 /*---------------------------------------
   CUSTOM FORM               
@@ -1033,7 +1051,6 @@ strong {
   border-color: transparent;
 }
 
-
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
@@ -1046,7 +1063,7 @@ strong {
 
 .site-footer-top {
   background-color: var(--secondary-color);
-  background-image: url('../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
+  background-image: url("../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg");
   background-repeat: no-repeat;
   margin-bottom: 70px;
   padding-top: 30px;
@@ -1059,7 +1076,7 @@ strong {
 }
 
 .site-footer-title {
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
 .site-footer-link,
@@ -1080,7 +1097,6 @@ strong {
 .copyright-text {
   font-size: var(--copyright-font-size);
 }
-
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -1119,19 +1135,18 @@ strong {
   display: block;
 }
 
-.social-icon-link span:hover::before{
+.social-icon-link span:hover::before {
   animation: spinAround 2s linear infinite;
 }
 
 @keyframes spinAround {
   from {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
 }
-
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -1165,7 +1180,7 @@ strong {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
+
   .navbar {
     background-color: var(--dark-color);
   }
@@ -1194,7 +1209,7 @@ strong {
     padding: 20px;
   }
 
-  .schedule-table tr, 
+  .schedule-table tr,
   .schedule-table td {
     padding: 25px;
   }
@@ -1246,7 +1261,7 @@ strong {
   bottom: 20px;
   right: 20px;
   background-color: #25d366;
-  color: #FFF;
+  color: #fff;
   border-radius: 50%;
   text-align: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
@@ -1268,7 +1283,7 @@ strong {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 500px) {
-  .ticket-button{
-      display: none;
+  .ticket-button {
+    display: none;
   }
 }
