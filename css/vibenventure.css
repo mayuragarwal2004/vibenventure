@@ -634,6 +634,7 @@ strong {
 
 .navbar-toggler .navbar-toggler-icon::before {
   top: -8px;
+  
 }
 
 .navbar-toggler .navbar-toggler-icon::after {
