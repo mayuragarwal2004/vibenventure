@@ -304,8 +304,8 @@
             <h5 class="site-footer-title mb-3">Have a question?</h5>
 
             <p class="text-white d-flex mb-1">
-              <a href="tel: 090-080-0760" class="site-footer-link">
-                090-080-0760
+              <a href="tel: +91 92581 37337" class="site-footer-link">
+                +91 92581 37337
               </a>
             </p>
 
@@ -373,6 +373,39 @@
     </footer>
 
     <!-- JAVASCRIPT FILES -->
+    <script>
+      document.querySelector(".custom-form.contact-form").addEventListener("submit", async function (event) {
+        event.preventDefault();
+    
+        const name = document.getElementById("contact-name").value;
+        const phone = document.getElementById("contact-mobile").value;
+    
+        if (!name || !phone.match(/^\d{10}$/)) {
+          alert("Please enter a valid name and 10-digit phone number.");
+          return;
+        }
+    
+        const formData = new URLSearchParams({ "contact-name": name, "contact-mobile": phone });
+    
+        try {
+          const response = await fetch("link_here", {
+            method: "POST",
+            body: formData,
+          });
+    
+          const result = await response.text();
+          if (result.includes("Success")) {
+            alert("Message sent successfully!");
+          } else {
+            alert("Error: " + result);
+          }
+        } catch (error) {
+          console.error("Submission failed:", error);
+          alert("An error occurred while submitting the form. Please try again.");
+        }
+      });
+    </script>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
