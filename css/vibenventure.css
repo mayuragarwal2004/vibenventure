@@ -1091,6 +1091,11 @@ strong {
   border-color: transparent;
 }
 
+.custom-form button[type="submit"]:disabled {
+  background: #ccc;
+  color: #fff;
+}
+
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
