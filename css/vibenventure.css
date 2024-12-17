@@ -655,7 +655,7 @@ strong {
   overflow: hidden;
   padding-top: 100px;
   height: calc(100vh - 51px);
-  background-image: url("/images/bg4.jpg"); /* Add your image path here */
+  background-image: url("/images/bg5.jpg"); /* Add your image path here */
   background-size: cover; /* Ensures the image covers the section */
   background-position: center; /* Centers the image within the section */
   background-repeat: no-repeat; /* Prevents the image from repeating */
