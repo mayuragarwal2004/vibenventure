@@ -102,7 +102,20 @@
               <li class="nav-item">
                 <a class="nav-link click-scroll" href="contact.html">Contact</a>
               </li>
+
+              <li class="nav-item">
+                <a 
+                class="nav-link click-scroll" 
+                href="tel:+919258137337" 
+                style="text-decoration: none; color: inherit; display: inline-flex; align-items: center; gap: 5px;"
+              >
+             <i class="fa fa-phone" style="font-size: 14px; color: #e6e8eb;"></i>
+                <span style="font-size: 17px;">9258137337</span>
+              </a>
+              </li> 
+              
             </ul>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
             <a href="ticket.html" class="btn custom-btn d-lg-block d-none"
               >Book Your Event</a
@@ -117,8 +130,27 @@
         <div class="container d-flex justify-content-center align-items-center">
           <div class="row">
             <div class="col-12 mt-auto mb-5 text-center">
-              <h1 class="text-white mb-5">More than events,
-                <br>We create experiences.</h1>
+              <h1 class="text-white mb-5" style="
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeSlideUp 1.5s ease-out forwards;
+">
+    More than events,<br>We create experiences.
+</h1>
+
+<style>
+    @keyframes fadeSlideUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
               <p class="text-white mb-5" style="font-size: x-large;">
                 "Crafting Celebrations That Reflect Your Story."
               </p>
@@ -182,7 +214,36 @@
             <!-- About Us Content -->
             <div class="col-lg-12 col-12 mb-4">
               <div class="services-info">
-                <h2 class="text-white mb-4">About VIBE N VENTURE</h2>
+                <h2 class="text-white mb-4 animate-on-scroll" style="
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: all 1.2s ease-out;
+">
+    About VIBE N VENTURE
+</h2>
+
+<style>
+    /* Animation when scrolled into view */
+    .animate-on-scroll.scrolled {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+</style>
+
+<script>
+    // Intersection Observer for scroll-triggered animation
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('scrolled');
+            }
+        });
+    });
+
+    // Observe the target element
+    document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+</script>
+
                 <p class="text-white about-text">
                   At VIBE N VENTURE, founded by SHUBHAM BANSAL, a seasoned expert in event management, creative design, and client relations, we believe every event is a story waiting to be told. With his vision and meticulous planning skills, we are dedicated to crafting unforgettable experiences that resonate with passion, creativity, and attention to detail. From vibrant corporate gatherings to intimate social celebrations, our team tailors each event to reflect the unique style and vision of our clients.
                 </p>
@@ -882,6 +943,10 @@
               <li class="site-footer-link-item">
                 <a href="contact.html" class="site-footer-link">Contact</a>
               </li>
+
+              <li class="site-footer-link-item">
+                <a href="terms&conditions.html" class="site-footer-link">Terms & Conditions</a>
+              </li> 
           </div>
 
           <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">

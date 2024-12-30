@@ -404,43 +404,71 @@ strong {
   padding: 45px;
 }
 
+/* Nav Tabs Container */
 .nav-tabs {
-  background-color: var(--section-bg-color);
-  border-radius: var(--border-radius-large);
-  border-bottom: 0;
-  padding: 15px;
+  background-color: var(--section-bg-color); /* Background for the tab container */
+  border-radius: var(--border-radius-large); /* Rounded corners */
+  border-bottom: 0; /* Removes default bottom border */
+  padding: 8px 10px; /* Reduced padding for compact spacing */
+  display: flex; /* Ensures tabs align properly */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center; /* Centers tabs horizontally */
+  gap: 5px; /* Smaller space between tabs */
 }
 
+/* Individual Tab Links */
 .nav-tabs .nav-link {
-  border-radius: var(--border-radius-large);
-  border: 0;
-  padding: 15px 25px;
-  transition: all 0.3s;
+  border-radius: var(--border-radius-large); /* Rounded corners */
+  border: 0; /* Removes default border */
+  padding: 8px 12px; /* Compact padding */
+  font-size: 12px; /* Smaller font size */
+  font-weight: 500; /* Slightly bold text */
+  color: var(--p-color); /* Default text color */
+  transition: all 0.2s ease-in-out; /* Smooth hover effect */
+  text-align: center; /* Centers text in the tab */
+  white-space: nowrap; /* Prevents text from wrapping */
 }
 
-.nav-tabs .nav-link:first-child {
-  margin-right: 15px;
-}
-
+/* Active, Hover, Focus States */
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
-  background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  color: var(--primary-color);
+  background: var(--white-color); /* Background color for active/hovered tab */
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: var(--primary-color); /* Active text color */
+  font-weight: 600; /* Slightly bolder font on active */
 }
 
+/* Tab Headings */
 .nav-tabs h5 {
-  color: var(--p-color);
-  margin-bottom: 0;
+  color: var(--p-color); /* Default heading color */
+  margin-bottom: 0; /* Removes unnecessary margin */
+  font-size: 12px; /* Smaller heading font size */
 }
 
+/* Active/Focused/Hovered Heading Text */
 .nav-tabs .nav-link.active h5,
 .nav-tabs .nav-link:focus h5,
 .nav-tabs .nav-link:hover h5 {
-  color: var(--primary-color);
+  color: var(--primary-color); /* Heading text color in active state */
 }
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .nav-tabs {
+    flex-direction: row; /* Keeps tabs horizontal */
+    overflow-x: auto; /* Horizontal scroll if too many tabs */
+    justify-content: flex-start; /* Align tabs to the left */
+    gap: 3px; /* Even smaller gap on mobile */
+  }
+
+  .nav-tabs .nav-link {
+    padding: 6px 10px; /* More compact padding */
+    font-size: 11px; /* Smaller font size */
+  }
+}
+
 
 /*---------------------------------------
   CUSTOM ICON COLOR               
