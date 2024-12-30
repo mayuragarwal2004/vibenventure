@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Montserrat:wght@400&display=swap");
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+* {
+  animation: fadeIn 1s ease-in-out, slideIn 1.5s ease-out;
+}
+
+
 /* Portfolio Section Styles */
 .portfolio-section {
   text-align: center;
@@ -582,7 +608,7 @@ strong {
 .navbar-expand-lg .navbar-nav .nav-link {
   border-radius: var(--border-radius-large);
   margin: 10px;
-  padding: 10px 20px;
+  padding: 10px 0px;
 }
 
 .navbar-nav .nav-link {
